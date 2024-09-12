@@ -2,16 +2,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-slate-500 pt-20 pb-20">
-      <div className="rounded-xl w-1/2 mx-auto  bg-white p-10">
+    <div className="lg:bg-slate-500 sm:bg-transparent pt-20 pb-20 ">
+      <div className="rounded-xl w-1/2  mx-auto bg-white p-10">
         <Image
           src="/images/image-omelette.jpeg"
           alt="omelette"
+          layout="responsive"
           width={800}
           height={400}
           className="rounded-lg inline-flex justify-center mb-8"
         />
-        <h1 className="text-4xl font-bold mb-6">Simple Omelette Recipe</h1>
+        <h1 className="text-4xl  font-bold mb-6">Simple Omelette Recipe</h1>
         <p>
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
