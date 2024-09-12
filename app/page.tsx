@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-pink-400 pt-20 pb-20">
+    <div className="bg-slate-500 pt-20 pb-20">
       <div className="rounded-xl w-1/2 mx-auto  bg-white p-10">
         <Image
           src="/images/image-omelette.jpeg"
@@ -92,27 +92,34 @@ export default function Home() {
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-
-          <tr className="flex justify-around mb-2">
-            <td>Calories</td>
-            <td className=" text-rose-800 font-semibold">277kcal</td>
-          </tr>
-          <hr className="border-b-slate-500" />
-          <tr className="flex justify-around mb-2">
-            <td>Carbs</td>
-            <td className=" text-rose-800 font-semibold">0g</td>
-          </tr>
-          <hr className="border-b-slate-500" />
-          <tr className="flex justify-around mb-2">
-            <td>Protein</td>
-            <td className=" text-rose-800 font-semibold">20g</td>
-          </tr>
-          <hr className="border-b-slate-500" />
-          <tr className="flex justify-around mb-2">
-            <td>Fat</td>
-            <td className=" text-rose-800 font-semibold">22g</td>
-          </tr>
-          <hr className="border-b-slate-500" />
+          <table className="table-auto w-full text-left mt-4">
+            <tbody className="space-y-2">
+              <tr className="flex justify-between border-b border-slate-500">
+                <td className="font-medium w-1/2">Calories</td>
+                <td className="text-rose-800 font-semibold w-1/2 text-right">
+                  277kcal
+                </td>
+              </tr>
+              <tr className="flex justify-between border-b border-slate-500">
+                <td className="font-medium w-1/2">Carbs</td>
+                <td className="text-rose-800 font-semibold w-1/2 text-right">
+                  0g
+                </td>
+              </tr>
+              <tr className="flex justify-between border-b border-slate-500">
+                <td className="font-medium w-1/2">Protein</td>
+                <td className="text-rose-800 font-semibold w-1/2 text-right">
+                  20g
+                </td>
+              </tr>
+              <tr className="flex justify-between border-b border-slate-500">
+                <td className="font-medium w-1/2">Fat</td>
+                <td className="text-rose-800 font-semibold w-1/2 text-right">
+                  22g
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
