@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-pink-400 pt-20">
+    <div className="bg-pink-400 pt-20 pb-20">
       <div className="rounded-xl w-1/2 mx-auto  bg-white p-10">
         <Image
           src="/images/image-omelette.jpeg"
@@ -22,7 +22,7 @@ export default function Home() {
           <h3 className="font-semibold text-2xl text-rose-800 mb-4 ml-4">
             Preparation time
           </h3>
-          <ul className="list-disc">
+          <ul className="list-disc leading-loose">
             <li className="ml-12">
               <strong>Total</strong>: Approximately 10 minutes
             </li>
@@ -35,9 +35,11 @@ export default function Home() {
           </ul>
         </div>
 
-        <div>
-          <h2>Ingredients</h2>
-          <ul>
+        <div className="mb-10">
+          <h2 className="text-4xl font-semibold text-rose-800 mt-10">
+            Ingredients
+          </h2>
+          <ul className="list-disc leading-loose mt-4 ml-8">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
             <li>Pepper, to taste</li>
@@ -46,11 +48,11 @@ export default function Home() {
             <li>cooked meats, herbs</li>
           </ul>
         </div>
-        <div className="border-b-slate-500"></div>
+        <hr className="border-b-slate-500" />
 
-        <div className="">
-          <h1>Instructions</h1>
-          <ol>
+        <div className="mt-10">
+          <h1 className="text-4xl font-semibold text-rose-800">Instructions</h1>
+          <ol className="list-decimal  leading-loose ml-8 mt-4">
             <li>
               <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
               pinch of salt and pepper until they are well mixed. You can add a
@@ -81,14 +83,36 @@ export default function Home() {
             </li>
           </ol>
         </div>
-        <div className="border-b-slate-500"></div>
-        <div className="">
-          <h1>Nutrition</h1>
-          <p>
+        <hr className="border-b-slate-500" />
+        <div className="mt-10">
+          <h1 className="text-4xl font-semibold text-rose-800 mb-4">
+            Nutrition
+          </h1>
+          <p className="mb-4">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table></table>
+
+          <tr className="flex justify-around mb-2">
+            <td>Calories</td>
+            <td className=" text-rose-800 font-semibold">277kcal</td>
+          </tr>
+          <hr className="border-b-slate-500" />
+          <tr className="flex justify-around mb-2">
+            <td>Carbs</td>
+            <td className=" text-rose-800 font-semibold">0g</td>
+          </tr>
+          <hr className="border-b-slate-500" />
+          <tr className="flex justify-around mb-2">
+            <td>Protein</td>
+            <td className=" text-rose-800 font-semibold">20g</td>
+          </tr>
+          <hr className="border-b-slate-500" />
+          <tr className="flex justify-around mb-2">
+            <td>Fat</td>
+            <td className=" text-rose-800 font-semibold">22g</td>
+          </tr>
+          <hr className="border-b-slate-500" />
         </div>
       </div>
     </div>
